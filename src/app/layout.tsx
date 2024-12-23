@@ -27,8 +27,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} h-lvh`}>
-        <div className="relative h-full">
+      <body className={`${geistSans.variable} ${geistMono.variable} h-full`}>
+        <div className="">
           <Header />
           {children}
           <Footer />

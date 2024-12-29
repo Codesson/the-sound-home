@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <div className="p-4">
-      <h1 className="text-4xl"> The Sound</h1>
-      <div className="mt-8 pl-4 text-2xl flex flex-col gap-4">
+    <div className="p-4 py-20">
+      <h1 className="text-3xl"> The Sound</h1>
+      <div className="mt-8 pl-4 text-xl flex flex-col gap-4">
         <div className="flex gap-4">
           <div className="font-bold w-16">사무실</div>
           <div>인천시 연수구 선학로90, 212호</div>

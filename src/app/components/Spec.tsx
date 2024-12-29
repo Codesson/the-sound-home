@@ -1,3 +1,6 @@
+import Image from "next/image";
+import { Fragment } from "react";
+
 export default function Spec() {
   //   const COMPABT_SPEC = {
   //     name: {
@@ -80,14 +83,23 @@ export default function Spec() {
   ];
 
   return (
-    <section className="w-full p-4">
+    <section className="w-full p-4 flex">
       <div className="grid grid-cols-2 w-[50%] gap-4">
-        {COMPANY_SPEC.map(({ label, value }) => (
-          <>
+        {COMPANY_SPEC.map(({ label, value }, index) => (
+          <Fragment key={index}>
             <div>{label}</div>
             <div>{value}</div>
-          </>
+          </Fragment>
         ))}
+      </div>
+      <div className="w-[50%] flex justify-end items-center">
+        <Image
+          src={"/isolated.png"}
+          width={500}
+          height={500}
+          style={{ objectFit: "contain" }}
+          alt=""
+        />
       </div>
     </section>
   );

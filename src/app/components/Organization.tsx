@@ -1,17 +1,19 @@
+import Image from "next/image";
+
 export default function Organization() {
   return (
-    <section>
-      <h3>조직도</h3>
-      <div className="w-18 h-18 border-2 border-[#ffffff] rounded-full p-4">
-        CEO
-      </div>
-      <div>
-        <div className="d-inline w-18 h-18 border-2 border-[#ffffff] rounded-full p-4">
-          영업팀
-        </div>
-        <div className="w-18 h-18 border-2 border-[#ffffff] rounded-full p-4">
-          지원팀팀
-        </div>
+    <section className="flex flex-col justify-center items-center py-20">
+      <h3 className="w-fit text-4xl mt-20">조직도</h3>
+      <div className="relative w-[90vw] min-h-[50vw]">
+        <Image
+          src={"/organization.png"}
+          alt=""
+          // width={500}
+          // height={200}
+          fill={true}
+          priority={false}
+          style={{ objectFit: "contain", paddingLeft: 10 }}
+        />
       </div>
     </section>
   );

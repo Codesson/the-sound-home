@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Spec from "../components/Spec";
 import Organization from "../components/Organization";
+import Greetings from "../components/Greetings";
+import Certificates from "../components/Certificates";
 
 export default function Introduce() {
   return (
     <div className="w-full">
-      <section className="relative w-full border-[#ff0000] border-2">
+      <section className="relative w-full ">
         <div className="w-full h-lvh">
           <Image
             className="-z-0 absolute"
@@ -20,8 +22,10 @@ export default function Introduce() {
           </div>
         </div>
       </section>
+      <Greetings />
       <Spec />
       <Organization />
+      <Certificates />
     </div>
   );
 }

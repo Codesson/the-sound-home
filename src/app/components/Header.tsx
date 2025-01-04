@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Headers() {
   return (
-    <div className="absolute w-full flex row justify-between p-4 z-10">
+    <div className="fixed w-full flex row justify-between p-4 z-10">
       <Image src={"/wave-sound.png"} alt="" width={36} height={36} />
       <ul className="flex row gap-2">
         <li>

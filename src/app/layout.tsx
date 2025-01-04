@@ -30,7 +30,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} h-full`}>
         <div className="">
           <Header />
-          {children}
+          <div className="pt-[68px]">{children}</div>
           <Footer />
         </div>
       </body>

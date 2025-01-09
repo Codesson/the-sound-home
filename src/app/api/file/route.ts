@@ -31,7 +31,9 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 
     console.log("file list: ", files);
     return NextResponse.json({ status: "success", files: files });
-  } catch (error) {}
+  } catch (error) {
+    return NextResponse.json({ error: "Data Error" }, { status: 500 });
+  }
 }
 
 // Next.js API 설정

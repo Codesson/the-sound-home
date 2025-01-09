@@ -61,6 +61,8 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
+      - name: Clear cache
+        run: ${{ steps.detect-package-manager.outputs.runner }} cache clean --force
       - name: Restore cache
         uses: actions/cache@v4
         with:

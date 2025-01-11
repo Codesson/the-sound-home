@@ -42,3 +42,5 @@ export const config = {
     bodyParser: false, // Next.js 기본 BodyParser 비활성화
   },
 };
+
+export const dynamic = "force-dynamic"; // 동적 처리 허용

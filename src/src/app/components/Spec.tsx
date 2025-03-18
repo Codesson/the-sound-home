@@ -83,18 +83,22 @@ export default function Spec() {
   ];
 
   return (
-    <section className="w-full p-4 flex">
-      <div className="grid grid-cols-2 w-[50%] gap-4">
-        {COMPANY_SPEC.map(({ label, value }, index) => (
-          <Fragment key={index}>
-            <div>{label}</div>
-            <div>{value}</div>
-          </Fragment>
-        ))}
+    <section className="w-full p-4 flex h-[50vh] items-center justify-center">
+      <div className="w-[40%] gap-4 text-xl">
+        <table>
+          <tbody>
+            {COMPANY_SPEC.map(({ label, value }, index) => (
+              <tr key={index}>
+                <td className="min-w-[150px] px-2 py-2">{label}</td>
+                <td className="px-2 py-2 font-bold">{value}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
-      <div className="w-[50%] flex justify-end items-center">
+      <div className="w-[40%] flex items-center">
         <Image
-          src={"/isolated.png"}
+          src={"/images/isolated.png"}
           width={500}
           height={500}
           style={{ objectFit: "contain" }}

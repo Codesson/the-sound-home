@@ -16,7 +16,7 @@ export default function Portfolio() {
     {
       mainImage: "",
       alt: "",
-      detailImages: ["/example1.jpg", "/example2.jpg", "/example3.jpg"],
+      detailImages: ["/images/example1.jpg", "/images/example2.jpg", "/images/example3.jpg"],
     },
   ];
   const [index, setIndex] = useState<number>(-1);
@@ -38,25 +38,25 @@ export default function Portfolio() {
         <RowsPhotoAlbum
           photos={[
             {
-              src: "/example1.jpg",
+              src: "/images/example1.jpg",
               alt: "사례1",
               width: 1200,
               height: 860,
             },
             {
-              src: "/example2.jpg",
+              src: "/images/example2.jpg",
               alt: "사례2",
               width: 1200,
               height: 860,
             },
             {
-              src: "/example3.jpg",
+              src: "/images/example3.jpg",
               alt: "사례3",
               width: 1200,
               height: 860,
             },
             {
-              src: "/example4.jpg",
+              src: "/images/example4.jpg",
               alt: "사례4",
               width: 1200,
               height: 860,
@@ -67,19 +67,19 @@ export default function Portfolio() {
         <Lightbox
           slides={[
             {
-              src: "/example1.jpg",
+              src: "/images/example1.jpg",
               alt: "사례1",
               width: 1200,
               height: 860,
             },
             {
-              src: "/example2.jpg",
+              src: "/images/example2.jpg",
               alt: "사례2",
               width: 1200,
               height: 860,
             },
             {
-              src: "/example3.jpg",
+              src: "/images/example3.jpg",
               alt: "사례3",
               width: 1200,
               height: 860,
